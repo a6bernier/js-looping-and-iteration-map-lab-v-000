@@ -8,9 +8,11 @@ function lowerCaseDrivers(drivers){
 
 function nameToAttributes(drivers){
   return drivers.map(function(driver){
-    const firstName = driver.split(" ")[0];
-    const lastName = driver.split(" ")[1];
-  })
+    const driverFirst = driver.split(" ")[0];
+    const driverLast = driver.split(" ")[1];
+
+    return { firstName: driverFirst, lastName: driverLast};
+  });
 }
 
 // function attributesToPhrase(drivers){
