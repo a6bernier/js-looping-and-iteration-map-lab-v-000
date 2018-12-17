@@ -5,3 +5,9 @@ function lowerCaseDrivers(drivers){
     return driver.toLowerCase();
   })
 }
+
+function attributesToPhrase(drivers){
+
+
+  return `${driverName} is from ${hometown}`
+}
